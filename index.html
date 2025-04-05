@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistemi i Integruar Mjedisor - AKM</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary: #1e6f5c;
+            --secondary: #29bb89;
+            --accent: #e6dd3b;
+            --dark: #212121;
+            --light: #f8f9fa;
+            --white: #ffffff;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: var(--light);
+        }
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        header {
+            background: linear-gradient(to right, var(--primary), var(--secondary));
+            color: var(--white);
+            padding: 2rem 0;
+        }
+        nav {
+            background-color: var(--dark);
+            color: var(--white);
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: var(--white);
+            text-decoration: none;
+        }
+        .nav-menu {
+            display: flex;
+            list-style: none;
+        }
+        .nav-item { margin-left: 1.5rem; }
+        .nav-link {
+            color: var(--white);
+            text-decoration: none;
+        }
+        .section {
+            padding: 3rem 0;
+        }
+        .section-title {
+            text-align: center;
+            margin-bottom: 2rem;
+            color: var(--primary);
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+        .card {
+            background-color: var(--white);
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            padding: 1.5rem;
+        }
+        .btn {
+            display: inline-block;
+            background-color: var(--primary);
+            color: var(--white);
+            padding: 0.8rem 1.5rem;
+            border-radius: 5px;
+            text-decoration: none;
+            margin-top: 1rem;
+        }
+        footer {
+            background-color: var(--dark);
+            color: var(--white);
+            padding: 2rem 0;
+            text-align: center;
+            margin-top: 2rem;
+        }
+        @media (max-width: 768px) {
+            .nav-menu { display: none; }
+            .grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Sistemi i Integruar Mjedisor</h1>
+            <p>Përmirësimi i Sistemit të Integruar Mjedisor për Agjencinë Kombëtare të Mjedisit</p>
+        </div>
+    </header>
+    
+    <nav>
+        <div class="container nav-container">
+            <a href="#" class="logo">AKM</a>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="#about" class="nav-link">Rreth Projektit</a></li>
+                <li class="nav-item"><a href="#modules" class="nav-link">Modulet</a></li>
+                <li class="nav-item"><a href="#timeline" class="nav-link">Afatet</a></li>
+                <li class="nav-item"><a href="https://github.com/asipbajrami/sim-akm-web" class="nav-link">GitHub</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+    <section class="section" id="about">
+        <div class="container">
+            <h2 class="section-title">Rreth Projektit</h2>
+            <p>Sistemi i Integruar Mjedisor (SIM) transformon menaxhimin e lejeve mjedisore, monitorimin, raportimin dhe transparencën në fushën e mjedisit, duke centralizuar të dhënat dhe përmirësuar vendimmarrjen.</p>
+            <div style="text-align: center; margin-top: 1.5rem;">
+                <a href="#modules" class="btn">Shiko Modulet</a>
+            </div>
+        </div>
+    </section>
+    
+    <section class="section" id="modules" style="background-color: white;">
+        <div class="container">
+            <h2 class="section-title">Modulet Funksionalë</h2>
+            <div class="grid">
+                <div class="card">
+                    <h3>Menaxhimi i Lejeve Mjedisore</h3>
+                    <p>Automatizimi i plotë i procesit të aplikimit, shqyrtimit dhe lëshimit të lejeve mjedisore të tipit A dhe B, si dhe licencat III.2.B.</p>
+                </div>
+                
+                <div class="card">
+                    <h3>Vetëmonitorimi dhe Raportimi</h3>
+                    <p>Platformë për dorëzimin elektronik të raporteve të vetëmonitorimit, me analiza të gjeneruara automatikisht.</p>
+                </div>
+                
+                <div class="card">
+                    <h3>Portali Publik</h3>
+                    <p>Ofron qasje publike në informacionin mjedisor, leje, raporte dhe vendime të rëndësishme.</p>
+                </div>
+                
+                <div class="card">
+                    <h3>Analiza dhe Raportimi</h3>
+                    <p>Mjete për përpunimin dhe analizën e të dhënave mjedisore, dhe gjenerimin e raporteve për vendimmarrje.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="section" id="timeline">
+        <div class="container">
+            <h2 class="section-title">Afatet e Implementimit</h2>
+            <div class="grid">
+                <div class="card">
+                    <h3>Faza I: Përgatitore</h3>
+                    <p>Analizimi i kërkesave funksionale dhe bazës ligjore.</p>
+                    <p><strong>Kohëzgjatja:</strong> Muaji 1</p>
+                </div>
+                
+                <div class="card">
+                    <h3>Faza II: Përmirësimi i Sistemit</h3>
+                    <p>Implementimi i përmirësimeve sipas kërkesave dhe ndryshimeve ligjore.</p>
+                    <p><strong>Kohëzgjatja:</strong> Muaji 2-8</p>
+                </div>
+                
+                <div class="card">
+                    <h3>Faza III: Testimi dhe Trajnimi</h3>
+                    <p>Verifikimi i funksionaliteteve dhe trajnimi i personelit.</p>
+                    <p><strong>Kohëzgjatja:</strong> Muaji 8</p>
+                </div>
+                
+                <div class="card">
+                    <h3>Faza IV & V: Dorëzimi dhe Mirëmbajtja</h3>
+                    <p>Dorëzimi i sistemit dhe mirëmbajtja 2-vjeçare.</p>
+                    <p><strong>Kohëzgjatja:</strong> Muaji 9-33</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <footer>
+        <div class="container">
+            <p>© 2025 Agjencia Kombëtare e Mjedisit. Të gjitha të drejtat të rezervuara.</p>
+            <p><a href="https://github.com/asipbajrami/sim-akm-web" style="color: var(--accent);">GitHub Repository</a></p>
+        </div>
+    </footer>
+</body>
+</html>
